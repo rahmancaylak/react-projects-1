@@ -52,3 +52,20 @@ code {
   margin-top: 0.3rem;
   color: rgb(187, 187, 187);
 }
+
+.reminder-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.reminder-footer .reminder-button{
+  border: none;
+  margin: 1rem;
+  width: 85%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(119, 0, 255);
+  color: #FFF;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

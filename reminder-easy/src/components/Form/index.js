@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from './Button'
 import Content from './Content'
 
 function Form() {
+
+  const [filterData, setFilterData] = useState(true);
+
   return (
     <>
-      <Content/>
-      <Button/>
+      <Content filterData={filterData}/>
+      <Button setFilterData={setFilterData}/>
     </>
   )
 }

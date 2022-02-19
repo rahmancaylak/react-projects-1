@@ -1,14 +1,15 @@
 import React from 'react'
-import data from './data';
-function Form() {
+import data from '../../../data';
+
+function Form({filterData}) {
   
-    console.log(data);
+  const filtered = data.filter((data) => filterData === true ? data : null)
   
   return (
     <div className='reminder-form'>
-      <h2>{data.length} birthdays today</h2>
+      <h2>{filtered.length} birthdays today</h2>
       {
-        data.map((data) => 
+        filtered.map((data) => 
         <div className='reminder-items' key={data.id}>
         <img width="75px" height="75px" src={data.imageURL} alt='person' />
         <div className='reminder-info'>

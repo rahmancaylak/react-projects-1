@@ -4,7 +4,7 @@ This project is a lorem ipsum clone from https://react-projects.netlify.app/.
 ## Which Technology Used
 - React v17.0.2
 - [Axios](https://www.npmjs.com/package/axios)
-- [API]: (https://baconipsum.com/json-api/)
+- [API Link](https://baconipsum.com/json-api/)
 
 ## Output
 ![bacon-ipsum-output](https://github.com/rahmancaylak/React-Projects/blob/master/bacon-ipsum/bacon-ipsum-output.gif?raw=true)

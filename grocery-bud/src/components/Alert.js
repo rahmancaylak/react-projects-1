@@ -1,29 +1,17 @@
 import React, { useEffect } from 'react';
 
-function Alert({ statusClass, setStatusClass }) {
+function Alert({ type, msg, status, setAlert, form }) {
   useEffect(() => {
-    const statusClassInterval = setInterval(() => {
-      setStatusClass(false);
+    const timeout = setTimeout(() => {
+      setAlert({ type: '', msg: '', status: false });
     }, 3000);
     return () => {
-      clearInterval(statusClassInterval);
+      clearInterval(timeout);
     };
-  }, [statusClass]);
+  }, [form, status]);
+
   return (
-    <>
-      {statusClass === 'added' && (
-        <p className='alert alert-success'>Item Added To The List</p>
-      )}
-      {statusClass === 'remove' && (
-        <p className='alert alert-danger'>Item Removed</p>
-      )}
-      {statusClass === 'clear' && (
-        <p className='alert alert-danger'>Empty List</p>
-      )}
-      {statusClass === 'updated' && (
-        <p className='alert alert-success'>Value Changed</p>
-      )}
-    </>
+    <>{status !== false && <p className={`alert alert-${type}`}>{msg}</p>}</>
   );
 }
 

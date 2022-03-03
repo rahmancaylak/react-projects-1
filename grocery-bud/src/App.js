@@ -6,18 +6,23 @@ import Alert from './components/Alert';
 
 function App() {
   const [form, setForm] = useState([]);
-  const [statusClass, setStatusClass] = useState('');
+  //const [statusClass, setStatusClass] = useState('');
+  const [alert, setAlert] = useState({
+    status: false,
+    msg: '',
+    type: '',
+  });
   const [grocery, setGrocery] = useState('');
   const [updateId, setUpdateId] = useState(0);
   const groceryInit = (e) => setGrocery(e.target.value);
 
   return (
     <section className='section-center'>
-      <Alert statusClass={statusClass} setStatusClass={setStatusClass} />
+      <Alert {...alert} setAlert={setAlert} form={form} />
       <Form
         form={form}
         setForm={setForm}
-        setStatusClass={setStatusClass}
+        setAlert={setAlert}
         grocery={grocery}
         setGrocery={setGrocery}
         groceryInit={groceryInit}
@@ -27,7 +32,8 @@ function App() {
       <Content
         form={form}
         setForm={setForm}
-        setStatusClass={setStatusClass}
+        {...alert}
+        setAlert={setAlert}
         setGrocery={setGrocery}
         setUpdateId={setUpdateId}
       />

@@ -1,25 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-function Content({ form, setForm, setStatusClass, setUpdateId, setGrocery }) {
+function Content({ form, setForm, setAlert, setUpdateId, setGrocery }) {
+  const [list, setList] = useState([]);
   const removeGrocery = (id) => {
-    const newData = form.filter((removeItem) => removeItem.id !== id);
+    // remove
+    const newData = list.filter((removeItem) => removeItem.id !== id);
     setForm(newData);
-    setStatusClass('remove');
+    localStorage.setItem('item', JSON.stringify([...newData]));
+    setAlert({ status: true, msg: 'Item Removed', type: 'danger' });
+    if (newData.length === 0) {
+      return localStorage.clear('item');
+    }
   };
   function clearGrocery() {
+    // Clear local and state
     setForm([]);
-    setStatusClass('clear');
+    localStorage.clear('item');
+    setAlert({ status: true, msg: 'Empty List', type: 'danger' });
   }
   function updateGrocery(id) {
+    // update values
     setUpdateId(id);
-    const updGroceryInput = form.filter((form) => form.id === id);
+    const updGroceryInput = list.filter((list) => list.id === id);
     setGrocery(updGroceryInput[0].title);
   }
+
+  useEffect(() => {
+    setList(JSON.parse(localStorage.getItem('item')));
+  }, [form]);
+
   return (
-    form.length > 0 && (
+    list && (
       <div className='grocery-container'>
         <div className='grocery-list'>
-          {form.map((data) => (
+          {list.map((data) => (
             <article className='grocery-item' key={data.id}>
               <p className='title'>{data.title}</p>
               <div className='btn-container'>

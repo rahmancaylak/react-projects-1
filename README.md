@@ -3,12 +3,12 @@
 
 <div align="center">
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
-<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"></img>
+<img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></img>
 <img src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white"></img>
 
 </div>
 
-## 1. Tours (<a href="#"></a>)
+## 1. Tours (<a href="https://rahmancaylak-tours.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/tours)
 
@@ -21,7 +21,7 @@
 
 ![tours](https://github.com/rahmancaylak/React-Projects/blob/master/tours/tours-output.gif?raw=true)
 
-## 2. Tabs (<a href="#"></a>)
+## 2. Tabs (<a href="https://rahmancaylak-tabs.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/tabs)
 
@@ -33,7 +33,7 @@
 
 ![tabs-output](https://github.com/rahmancaylak/React-Projects/blob/master/tabs/tabs-output.gif?raw=true)
 
-## 3. Bacon Ipsum (<a href="#"></a>)
+## 3. Bacon Ipsum (<a href="https://rahmancaylak-bacon-ipsum.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/bacon-ipsum)
 
@@ -45,7 +45,7 @@
 
 ![bacon-ipsum-output](https://github.com/rahmancaylak/React-Projects/blob/master/bacon-ipsum/bacon-ipsum-output.gif?raw=true)
 
-## 4. Grocery Bud (<a href="#"></a>)
+## 4. Grocery Bud (<a href="https://rahmancaylak-grocery-bud.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/grocery-bud)
 
@@ -56,7 +56,7 @@
 
 ![grocery-bud-output](https://github.com/rahmancaylak/React-Projects/blob/master/grocery-bud/grocery-bud-output.gif?raw=true)
 
-## 5. Accordion (<a href="#"></a>)
+## 5. Accordion (<a href="https://rahmancaylak-accordion.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/accordion)
 
@@ -67,7 +67,7 @@
 
 ![accordion](https://github.com/rahmancaylak/React-Projects/blob/master/accordion/accordion-output.gif?raw=true)
 
-## 6. Food Menu (<a href="#"></a>)
+## 6. Food Menu (<a href="https://rahmancaylak-food-menu.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/food-menu)
 
@@ -78,7 +78,7 @@
 
 ![food-menu-output](https://github.com/rahmancaylak/React-Projects/blob/master/food-menu/food-menu-output.gif?raw=true)
 
-## 7. Reviews (<a href="#"></a>)
+## 7. Reviews (<a href="https://rahmancaylak-reviews.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/reviews)
 
@@ -89,7 +89,7 @@
 
 ![reviews](https://github.com/rahmancaylak/React-Projects/blob/master/reviews/reviews-output.gif?raw=true)
 
-## 8. Slider Reviews (<a href="#"></a>)
+## 8. Slider Reviews (<a href="https://rahmancaylak-slider-reviews.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/slider-reviews)
 
@@ -100,7 +100,7 @@
 
 ![slider-reviews](https://github.com/rahmancaylak/React-Projects/blob/master/slider-reviews/slider-reviews-output.gif?raw=true)
 
-## 9. Reminder Easy (<a href="#"></a>)
+## 9. Reminder Easy (<a href="https://rahmancaylak-birthday-reminder.netlify.app/">Live</a>)
 
 - [Repo Link](https://github.com/rahmancaylak/React-Projects/tree/master/reminder-easy)
 
